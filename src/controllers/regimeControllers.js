@@ -14,7 +14,7 @@ export async function getAllRegimePlans(req, res) {
 export async function addRegimePlan(req, res) {
   const { name, description } = req.body;
   const regimeImage = req.file?.path;
-
+ 
   try {
     const newRegimePlan = new Regime({
       name: name,
